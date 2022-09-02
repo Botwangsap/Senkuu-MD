@@ -15,7 +15,7 @@ module.exports = {
 	    ngontol = igdl.media.length > 1 ? true : false
       if(ngontol) await msg.reply("Jumlah media lebih dari 1, media akan dikirim lewat private chat (PC)\nSilahkan cek chat dari bot><!")
       for(let i of igdl.media) {
-        conn.sendFile(ngontol ? msg.sender : msg.from, i.url,"", "*Done*",msg)
+        conn.sendFile(ngontol ? msg.sender : msg.from, i.url,"", "*Done* ...jangan lupa follow ig ownerku kak : https://www.instagram.com/anggatzi123",msg)
           }
 	  } catch (e){
 	    global.error(msg.command, e, msg)
