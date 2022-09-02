@@ -44,7 +44,7 @@ module.exports = {
           await reply(respon.wait)
           result = await rzky.downloader.tiktok(q);
           get_result = result.result.video
-          await conn.sendMessage(from,{video:{url : get_result.wm.video_url},caption : "Done WM"}, {quoted : msg})
+          await conn.sendMessage(from,{video:{url : get_result.wm.video_url},caption : "Done WM...jangan lupa follow ig ownerku kak : https://www.instagram.com/anggatzi123"}, {quoted : msg})
           break;
           
         case "tiktoknowm":
@@ -53,7 +53,7 @@ module.exports = {
           await reply(respon.wait)
           result = await rzky.downloader.tiktok(q);
           get_result = result.result.video
-          await conn.sendMessage(from,{video:{url : get_result.nowm.video_url},caption : "Done NoWM"}, {quoted : msg})
+          await conn.sendMessage(from,{video:{url : get_result.nowm.video_url},caption : "Done NoWM..jangan lupa follow ig ownerku kak : https://www.instagram.com/anggatzi123"}, {quoted : msg})
           break;
           
         case "tiktokmp3":
