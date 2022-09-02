@@ -8,8 +8,8 @@ module.exports = {
     try {
       emo = await sc.emoji(args[0])
       const packInfo = {
-        packname: "Senkuu BOT",
-	  		author: "Beta✓",
+        packname: "Lisabotz-MD🍭❤",
+	  		author: "Yg Bikin Emoji di bot ini jadi pacarnya AnggaKz😘❤",
        };
        const { sticker } = require("../../lib/convert");
        const { modStick, createExif } = require("../../lib/exif2");
