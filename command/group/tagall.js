@@ -9,7 +9,7 @@ module.exports = {
 	isAdmin: true,
 	async run({msg, conn},{q}){
 	  let data = await conn.groupMetadata(msg.from)
-	  let txt1 = `*Announcement Group*\n\n`
+	  let txt1 = `*TAGALL* jangan lupa follow ig ownerku kak : https://www.instagram.com/anggatzi123\n\n`
 	  let txt = ` ❏ From @${msg.sender.split("@")[0]}\n`
 	      txt += ` ❏ Pesan : ${q ? q : "Tidak ada pesan"}\n`
 	      txt += ` ❏ Group : ${data.subject}\n`
