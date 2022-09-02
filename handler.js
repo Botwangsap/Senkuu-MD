@@ -103,13 +103,13 @@ module.exports = handler = async (mek, conn, map) => {
 			options.adReply
 				? (content.contextInfo = {
 						externalAdReply: {
-							title: "© Senkuu饺",
+							title: "© Lisabotz-MD🍭❤",
 							mediaType: 1,
 							//renderLargerThumbnail: true,
 							showAdAttribution: true,
 							body: config.namebot,
-							thumbnail: await conn.getBuffer("https://telegra.ph/file/915b6ff0ddf1f7d145880.jpg"),
-							sourceUrl: "https://chat.whatsapp.com/EdGuZCNrWGp2OFbXv5Rm8Y",
+							thumbnail: await conn.getBuffer("https://telegra.ph/file/fdaaa7a239ef3dda6e99b.jpg"),
+							sourceUrl: "https://chat.whatsapp.com/Ly28IB8Fel4JbPS0qCUy2p",
 						},
 				  })
 				: "";
@@ -203,8 +203,8 @@ module.exports = handler = async (mek, conn, map) => {
 		
 	// [ Response ]
 	global.respon = {
-	  wait: "Tunggu sebentar, Permintaan anda sedang diproses..",
-	  success: "Done ✓",
+	  wait: "Tunggu sebentar, Permintaan anda sedang diproses Jangan Lupa follow ig ownerku kak https://www.instagram.com/anggatzi123..",
+	  success: "Done....jangan lupa follow ig ownerku kak🍭❤",
 	  error:{
 	    cmd: "Maaf command error, Silahkan hubungi Owner!!",
 	    lv: ["Link tidak valid!!","Link nya mana?"],
