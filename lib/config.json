@@ -8,6 +8,7 @@
   "session": "senku-md",
   "email": "lisabotz150@gmail.com",
   "self": false,
+  "limit": { "limitUser": 10, "gameLimitUser": 10, "gameLimitPremium": 40 },
   "packInfo":{
     "packname": "Lisabotz-MD🍭❤",
     "author": "Yang Buat Sticker Di Bot Ini Jadi pacarnya AnggaKz😍😘🥰❤"
