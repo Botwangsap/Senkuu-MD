@@ -38,7 +38,8 @@ attr.isSelf = config.self
 global.addMap = (x) => {
 	attr[x] = new Map();
 };
-
+global.game = {}
+global.game.akinator = {}
 
 // Store
 global.store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) });
@@ -67,6 +68,9 @@ const ReadFitur = () => {
 				isBotAdmin: false,
 				query: false,
 				isPrivate: false,
+				isLimit: false,
+				isLimitGame: false,
+				isPremium: false,
 				noPrefix: false,
 				isMedia: {
 					isQVideo: false,
@@ -113,13 +117,13 @@ const connect = async() => {
 }
 
 async function start(){
-  let { version, isLatest } = await fetchLatestBaileysVersion()
+  let { version, isLatest } = await fetchLatestBaileysVersion();
+  
   console.clear();
   console.log(color('------------------------------------------------------------------------', 'white'))
-  // Jika eror figlet (Doom) , hapus console yg ada di bawah ini!! [ Teruntuk user heroku :v ]
   console.log(color('------------------------------------------------------------------------', 'white'))
   console.log(color('[CREATOR]', 'aqua'), color(config.author, 'magenta'))
-  console.log(color('[BOT]', 'aqua'), color('BOT Sudah Online!', 'magenta'))
+  console.log(color('[BOT]', 'aqua'), color('BOT is now Online!', 'magenta'))
   console.log(color('[VER]', 'aqua'), color(`${version}`, 'magenta'))
     
   const conn = Baileys({
@@ -220,3 +224,7 @@ async function start(){
 }
 
 connect();
+
+process.on("uncaughtException", function (err) {
+	console.error(err);
+});
